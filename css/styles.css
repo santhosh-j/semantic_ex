@@ -129,3 +129,26 @@ footer{
   padding: 1%;
   height: 6%;
 }
+
+@media only screen and (min-width:835px){
+  #bgmenu_mobile{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:835px){
+  #bgmenu{
+    display: none;
+  }
+  .hero{
+    margin-top: 2%;
+  }
+  #hero{
+    width: auto;
+    height: auto;
+  }
+}
+
+#toggle_mobile a{
+  float: left;
+}

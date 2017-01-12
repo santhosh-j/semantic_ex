@@ -13,21 +13,20 @@
 </head>
 <body>
     <div class="ui container">
-        <div class="ui sidebar vertical left menu">
-            <a href="#" class="item">HPCl Stock Price</a>
-            <a href="#" class="item">Product and Services</a>
-            <a href="#" class="item">Employee Portal</a>
-            <a href="#" class="item">Tendres & Contracts</a>
-            <a href="#" class="item">MyHPCL Mobile App</a>
-            <a href="#" class="item">GiveItUp Lpg Subsidy</a>
-            <a href="#" class="item">Career Oppurtunities</a>
-            <a href="#" class="item">Buisness Oppurtunities</a>
-            <a href="#" class="item">Contact Us</a>
-            <a href="#" class="item">feedback</a>
-            <a href="#" class="item">Complaints</a>
-        </div>
-
           <div class="ui top fixed stackable labeled icon menu" id="bgmenu">
+            <div class="ui sidebar vertical left menu">
+                <a href="#" class="item">HPCl Stock Price</a>
+                <a href="#" class="item">Product and Services</a>
+                <a href="#" class="item">Employee Portal</a>
+                <a href="#" class="item">Tendres & Contracts</a>
+                <a href="#" class="item">MyHPCL Mobile App</a>
+                <a href="#" class="item">GiveItUp Lpg Subsidy</a>
+                <a href="#" class="item">Career Oppurtunities</a>
+                <a href="#" class="item">Buisness Oppurtunities</a>
+                <a href="#" class="item">Contact Us</a>
+                <a href="#" class="item">feedback</a>
+                <a href="#" class="item">Complaints</a>
+            </div>
               <div class="item" id="toggle">
                   <br><a href="#"><i class="large sidebar icon"></i></a>
               </div>
@@ -59,6 +58,35 @@
                       <option value="9">Locate HPCL petrol pumps along your route</option>
                   </select> <br><button class="ui tiny button blue">Go</button>
               </div>
+          </div>
+
+
+          <div class="ui top stackable labeled icon menu" id="bgmenu_mobile">
+              <div class="ui sidebar mobile vertical left menu">
+                  <a href="index.html" class="item"><i class="home large icon"></i>Home</a>
+                  <a onclick="loginform();" class="item"><i class="user large icon"></i>Login</a>
+                  <a href="#" class="item">HPCl Stock Price</a>
+                  <a href="#" class="item">Product and Services</a>
+                  <a href="#" class="item">Employee Portal</a>
+                  <a href="#" class="item">Tendres & Contracts</a>
+                  <a href="#" class="item">MyHPCL Mobile App</a>
+                  <a href="#" class="item">GiveItUp Lpg Subsidy</a>
+                  <a href="#" class="item">Career Oppurtunities</a>
+                  <a href="#" class="item">Buisness Oppurtunities</a>
+                  <a href="#" class="item">Contact Us</a>
+                  <a href="#" class="item">feedback</a>
+                  <a href="#" class="item">Complaints</a>
+              </div>
+                <div class="item" id="toggle_mobile">
+                    <br><a href="#"><i class="large sidebar icon"></i></a>
+                </div>
+                <img src="img/hp_logo_small.jpg" alt="Hindustan Petroleum Corporation Limited Future full of Energy." style="height:105px; width:95px; align-items:center;">
+                <div class="item center">
+                    <span id="head">
+                        Hindustan Petroleum Corporation Ltd. <br>
+                        <p><em>future full of energy</em></p>
+                    </span>
+                </div>
           </div>
 
           <div class="ui modal">
@@ -224,6 +252,9 @@
 
         $('#toggle').click(function(){
             $('.ui.sidebar').sidebar('toggle');
+        });
+        $('#toggle_mobile').click(function(){
+            $('.ui.sidebar.mobile').sidebar('toggle');
         });
         function flip(){
           $('.ui.shape.hero').shape('flip right');
