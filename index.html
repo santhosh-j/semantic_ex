@@ -1,4 +1,4 @@
-`<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -42,6 +42,9 @@
               <div class="right item center">
               <br>    <a href="index.html"><i class="home large icon"></i><br>Home</a>
               </div>
+              <div class="right item center">
+              <br>    <a onclick="loginform();"><i class="user large icon"></i><br>Login</a>
+              </div>
               <div class="right item">
                   <select class="ui search small basic blue dropdown">
                       <option value="">--Select--</option>
@@ -57,6 +60,32 @@
                   </select> <br><button class="ui tiny button blue">Go</button>
               </div>
           </div>
+
+          <div class="ui modal">
+              <i class="close icon"></i>
+              <div class="ui one column center aligned grid">
+                <div class="column six wide form-holder">
+                  <h2 class="center aligned header form-head"><br>Sign in</h2>
+                  <div class="ui form">
+                    <div class="field">
+                      <input type="text" placeholder="username">
+                    </div>
+                    <div class="field">
+                      <input type="password" placeholder="password">
+                    </div>
+                    <div class="field">
+                      <input type="submit" value="sign in" class="ui button large fluid green">
+                    </div>
+                    <div class="inline field">
+                      <div class="ui checkbox">
+                        <input type="checkbox">
+                        <label>Remember me</label> <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           <div class="ui stackable shape hero" id="hero">
               <div class="sides">
                     <div class="active side">
@@ -200,6 +229,9 @@
           $('.ui.shape.hero').shape('flip right');
         }
        setInterval(flip,4000);
+       function loginform(){
+         $('.ui.modal').modal('show');
+       }
     </script>
 </body>
 </html>
