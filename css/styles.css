@@ -1,6 +1,15 @@
 body{
   background-color: #fff;
 }
+#head{
+  font-size: 180%;
+  color: blue;
+}
+#head p{
+  font-size: 80%;
+  float: left;
+  color: red;
+}
 #bgmenu{
   background-color: #89B6DD;
   color: black;

@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="dist/semantic.min.css">
   <link rel="stylesheet" href="css/styles.css" />
   <script src="dist/semantic.min.js"></script>
-  <title>Document</title>
+  <title>HP Lubes</title>
 </head>
 <body>
   <div class="ui container">
@@ -21,30 +21,41 @@
           <a href="#" class="item">GiveItUp Lpg Subsidy</a>
           <a href="#" class="item">Career Oppurtunities</a>
           <a href="#" class="item">Buisness Oppurtunities</a>
+          <a href="#" class="item">Contact Us</a>
+          <a href="#" class="item">feedback</a>
+          <a href="#" class="item">Complaints</a>
       </div>
 
-        <div class="ui top fixed labeled stackable icon menu" id="bgmenu">
+        <div class="ui top fixed stackable labeled icon menu" id="bgmenu">
             <div class="item" id="toggle">
                 <br><a href="#"><i class="large sidebar icon"></i></a>
             </div>
-            <img src="img/hpcl_logo.png" alt="Hindustan Petroleum Corporation Limited Future full of Energy.">
+            <img src="img/hp_logo_small.jpg" alt="Hindustan Petroleum Corporation Limited Future full of Energy.">
+            <div class="item center">
+
+                <span id="head">
+                    Hindustan Petroleum Corporation Ltd. <br>
+                    <p><em>future full of energy</em></p>
+                </span>
+            </div>
             <div class="right item center">
-            <br>    <a href="#"><i class="home large icon"></i><br>Home</a>
+            <br>    <a href="index.html"><i class="home large icon"></i><br>Home</a>
             </div>
             <div class="right item">
-            <br>    <a href="#"><i class="info large icon"></i><br>About</a>
-            </div>
-            <div class="right item">
-            <br>    <a href="#"><i class="call large icon"></i><br>Contact us</a>
-            </div>
-            <div class="right item">
-            <br>    <a href="#"><i class="comments large icon"></i><br>feedback</a>
-            </div>
-            <div class="right item">
-            <br>    <a href="#"><i class="edit large icon"></i><br>Complaints</a>
+                <select class="ui search small basic blue dropdown">
+                    <option value="">--Select--</option>
+                    <option value="1">Employee Portal</option>
+                    <option value="2">Alumbi Portal</option>
+                    <option value="3">Download Center</option>
+                    <option value="4">Download Lube Product Guide</option>
+                    <option value="5">Dealer Interview List</option>
+                    <option value="6">my LPG portal</option>
+                    <option value="7">HP cards</option>
+                    <option value="8">HPCL Stock Price/option>
+                    <option value="9">Locate HPCL petrol pumps along your route</option>
+                </select> <br><button class="ui tiny button blue">Go</button>
             </div>
         </div>
-    </div>
     <div class="ui stackable grid" id="jumbo">
         <img src="img/lubes_jumbo.jpg" alt="lubricant oil">
     </div>
@@ -128,6 +139,10 @@
         </div>
       </div>
       <footer>© 2016, HPCL. All rights reserved. Site designed & developed by BarrierBreakExternal Website that opens in a new window.</footer>
-
+<script>
+    $('#toggle').click(function(){
+        $('.ui.sidebar').sidebar('toggle');
+    });
+</script>
 </body>
 </html>
