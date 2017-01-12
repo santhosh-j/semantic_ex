@@ -27,9 +27,15 @@ body{
 #cardid{
   margin-top: 2%;
 }
-.description a{
-  float: right;
-  text-decoration: underline;
+#butt{
+  background-color: inherit;
+  align-items: center;
+  float: none;
+}
+#butt2{
+  align-items: center;
+  float: none;
+  text-align: center;
 }
 #hpintro{
   border: 0.5px solid #e3e3e3;
