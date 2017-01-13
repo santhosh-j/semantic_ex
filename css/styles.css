@@ -26,6 +26,9 @@ body{
 #hero{
   width: auto;
 }
+#hero img{
+  width: 100%;
+}
 #pic{
   border-radius: 50%;
 }
@@ -129,7 +132,16 @@ footer{
   padding: 1%;
   height: 6%;
 }
-
+@media only screen and (max-width:1050px){
+  .hero{
+    margin-top: 12%;
+  }
+}
+  @media only screen and (max-width:991px){
+    .hero{
+      margin-top: 14%;
+    }
+}
 @media only screen and (min-width:835px){
   #bgmenu_mobile{
     display: none;
@@ -144,8 +156,7 @@ footer{
     margin-top: 2%;
   }
   #hero{
-    width: auto;
-    height: auto;
+    width: 100%;
   }
 }
 
