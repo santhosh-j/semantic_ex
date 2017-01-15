@@ -1,43 +1,60 @@
 body{
-  background-color: #fff;
+  /*background:url(http://www.wildtextures.com/wp-content/uploads/2011/11/wildtextures-old-recycled-cardboard-texture-1200x800.jpg);*/
+  background: #c0a154 url(https://resources.blogblog.com/blogblog/data/1kt/watermark/body_background_birds.png) repeat scroll top left;
 }
 #head{
-  font-size: 180%;
+  padding-top: 3px;
+  font-size: 190%;
+  font-family: 'Droid Serif', serif;
+  font-stretch: extra-expanded;
+  letter-spacing: 2px;
   color: blue;
 }
 #head p{
-  font-size: 80%;
+  font-size: 60%;
   float: left;
+  letter-spacing: 1px;
   color: red;
 }
 #bgmenu{
-  background-color: #89B6DD;
-  color: black;
+  background-color: lightgrey;
+  color: blue;
 }
 #bgmenu a{
-    color: blue;
+    color: white;
 }
 .sidebar{
   padding-top: 7%;
 }
 .hero{
-  margin-top: 9%;
+  margin-top: 7.4%;
+  margin-bottom: 1%;
 }
 #hero{
-  width: auto;
+  width: 100%;
 }
 #hero img{
   width: 100%;
 }
 #pic{
-  border-radius: 50%;
+  border-radius: 0%;
 }
 #pic3{
-  border-radius: 50%;
+  border-radius: 0%;
   border: 0.5px solid #E3E3E3;
 }
 #cardid{
   margin-top: 2%;
+}
+#cardid a{
+  text-align: center;
+}
+#sub_title{
+  margin-top: 4%;
+  margin-bottom: 2%;
+  text-align: center;
+  font-size: 250%;
+  color: black;
 }
 #butt{
   background-color: inherit;
@@ -49,26 +66,26 @@ body{
   float: none;
   text-align: center;
 }
-#hpintro{
+/*#hpintro{
   border: 0.5px solid #e3e3e3;
-}
+}*/
 #grid2{
   margin-bottom: 1%;
 }
 #rows3{
-  padding-left: 2%;
+  padding-left: 1%;
   padding-top: 1%;
   padding-bottom: 2%;
-  border:0.5px solid #e3e3e3;
 }
 #rows3 a{
     float: inherit;
     text-decoration:underline;
+    color: blue;
 }
 .footer{
   text-align: center;
   margin-bottom: 0px;
-  padding-bottom: opx;
+  padding-bottom: 0px;
 }
 #footermenu{
   background-color: #89B6DD;
@@ -146,6 +163,9 @@ footer{
   #bgmenu_mobile{
     display: none;
   }
+  #bgmenu img{
+    padding-left: 20px;
+  }
 }
 
 @media only screen and (max-width:835px){
@@ -157,6 +177,10 @@ footer{
   }
   #hero{
     width: 100%;
+  }
+  #bgmenu_mobile{
+    display: inline;
+    background-color: #e3e3e3;
   }
 }
 
